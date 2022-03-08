@@ -8,6 +8,7 @@ public class Flipper : MonoBehaviour
     public float pressedPosition = 45f;
     public float hitStrenght = 10000f;
     public float flipperDamper = 1500f;
+    public AudioSource Bump; 
 
     public string inputName;
 
@@ -28,7 +29,8 @@ public class Flipper : MonoBehaviour
         spring.damper = flipperDamper;
         if (Input.GetAxis(inputName) == 1)
         {
-            spring.targetPosition = pressedPosition; 
+            spring.targetPosition = pressedPosition;
+            Bump.Play();
         }
         else
         {
