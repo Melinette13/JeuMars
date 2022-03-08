@@ -8,10 +8,15 @@ public class Respaw : MonoBehaviour
     public Transform spawn;
     
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider col)
     {
-
-        player.transform.position = spawn.position;
+        if (col.gameObject.tag == "BallRespawn")
+        {
+            player.transform.position = spawn.position;
+        }
+           
     }
+
+
 
 }

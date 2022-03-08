@@ -212,11 +212,10 @@ GameObject:
   m_Component:
   - component: {fileID: 18131019}
   - component: {fileID: 18131018}
-  - component: {fileID: 18131020}
   - component: {fileID: 18131021}
   m_Layer: 0
-  m_Name: respawn
-  m_TagString: BallRespawn
+  m_Name: DestroyBonus
+  m_TagString: BonusBallDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,26 +241,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18131017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.56989, y: 106.86306, z: 4.024948}
+  m_LocalPosition: {x: 64.56989, y: 106.86306, z: 0.8}
   m_LocalScale: {x: 107.0049, y: 7.52, z: 8.7}
   m_Children: []
   m_Father: {fileID: 847207285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &18131020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18131017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fdc64b571acd7749a3b3c75ea784882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 412559515}
-  spawn: {fileID: 1253514131}
 --- !u!114 &18131021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +270,6 @@ GameObject:
   - component: {fileID: 44307578}
   - component: {fileID: 44307577}
   - component: {fileID: 44307576}
-  - component: {fileID: 44307575}
   m_Layer: 0
   m_Name: respawn (1)
   m_TagString: BallRespawn
@@ -293,18 +277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &44307575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44307574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce776d8e9b3d4434eacd50acc98761ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &44307576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44307574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.56989, y: 106.86306, z: 4.024948}
+  m_LocalPosition: {x: 64.56989, y: 106.86306, z: 1}
   m_LocalScale: {x: 108.767395, y: 7.52, z: 8.7}
   m_Children: []
   m_Father: {fileID: 847207285}

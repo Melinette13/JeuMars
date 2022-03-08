@@ -9,7 +9,6 @@ public class BonusDestroy : MonoBehaviour
         if (col.gameObject.tag == "BonusBallDestroy")
         {
             Destroy(col.gameObject);
-            
         }
     }
 }
